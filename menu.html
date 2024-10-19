@@ -1,0 +1,503 @@
+<!-- 
+De Castro, Juan Carlo C.
+CS - 202 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Base Format -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Webpage Description -->
+    <title>Catnip Cafe || Cafe Menu</title>
+    <meta name="description" content="Catnip Cafe offers various foods and drinks that cater to every cat lovers' tastes. Why not take a sweet drink, a delioious meal, or just a hot cup of coffee to chill with your feline friends? ">
+    
+    <!-- External File Links -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+
+    <!-- Font "Afacad Flux", "Julius Sans One"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel = "shortcut icon" href = "images/Favicon.png">
+    <link rel = "icon" type = "image/png" sizes = "32x32" href = "images/Favicon.png">
+    <link rel = "apple-touch-icon" sizes = "180x180" href = "images/Favicon.png">
+    <link rel = "icon" sizes = "192x192" href = "images/Favicon.png">
+</head>
+<body>
+    <div id="container">
+        <header id="logo">
+                <!-- Desktop - Tablet Navbar -->
+                <nav class="desktop-nav">
+                    <ul>
+                        <li class="logo-item">
+                            <a href="index.html">
+                                <img src="images/Cafe_logo.png" alt="Catnip Cafe logo" class="logo">
+                            </a>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Cafe Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile Navbar -->
+                <nav class="mobile-nav">                   
+                        <a href="index.html">
+                        <img src="images/Cafe_logo.png" alt="Catnip Cafe logo" class="logo">
+                        </a>
+                    <a onclick = "hamburger()">
+                        <div class = "menu-icon">&#9776;</div>
+                    </a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Cafe Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <main>
+            <div class="bg-container">
+                <img src="images/Cafe.jpg" alt="Cafe Background" class="bg" id="mobile-bg">
+                <div class="main-content">
+                    <!-- Main Menu -->
+                    <p><a href="#form" class="shortcut-jump">Click to jump to Order Form</a></p>
+                    <h1 class="menu-title">What would you like to order?</h1>
+                    <table class="Hot-Drinks">
+                        <!-- Hot Drinks -->
+                        <tr class="striped">
+                            <th>Hot Drinks</th>
+                            <th>Price (PHP)</th>
+                        </tr>
+                        <tr>
+                            <td>Café Americano</td>
+                            <td>120</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Café Latte</td>
+                            <td>140</td>
+                        </tr>
+                        <tr>
+                            <td>Cappuccino</td>
+                            <td>135</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Caramel Macchiato</td>
+                            <td>155</td>
+                        </tr>
+                        <tr>
+                            <td>Flat White</td>
+                            <td>150</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Mocha</td>
+                            <td>145</td>
+                        </tr>
+                        <tr>
+                            <td>Hot Chocolate</td>
+                            <td>130</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Matcha Green Tea Latte</td>
+                            <td>155</td>
+                        </tr>
+                        <tr>
+                            <td>Chai Tea Latte</td>
+                            <td>145</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>English Breakfast Tea</td>
+                            <td>115</td>
+                        </tr>
+                    </table>
+                    <table class="Cold-Drinks">
+                        <!-- Cold Drinks -->
+                        <tr class="striped">
+                            <th>Cold Drinks</th>
+                            <th>Price (PHP)</th>
+                        </tr>
+                        <tr>
+                            <td>Cold Brew Coffee</td>
+                            <td>140</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Iced Café Latte</td>
+                            <td>155</td>
+                        </tr>
+                        <tr>
+                            <td>Iced Caramel Macchiato</td>
+                            <td>165</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Iced Mocha</td>
+                            <td>160</td>
+                        </tr>
+                        <tr>
+                            <td>Iced Matcha Green Tea Latte</td>
+                            <td>165</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Iced White Chocolate Mocha</td>
+                            <td>180</td>
+                        </tr>
+                        <tr>
+                            <td>Iced Shaken Hibiscus Tea</td>
+                            <td>130</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Frappuccino Java Chip</td>
+                            <td>180</td>
+                        </tr>
+                        <tr>
+                            <td>Frappuccino Caramel</td>
+                            <td>170</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Frappuccino Creamcheese</td>
+                            <td>190</td>
+                        </tr>
+                    </table>
+                    <table class="Hot-Foods">
+                        <!-- Hot Foods -->
+                        <tr class="striped">
+                            <th>Hot Foods</th>
+                            <th>Price (PHP)</th>
+                        </tr>
+                        <tr>
+                            <td>Bacon, Egg & Cheese Sandwich</td>
+                            <td>195</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Sausage, Egg & Cheese Wrap</td>
+                            <td>210</td>
+                        </tr>
+                        <tr>
+                            <td>Ham & Cheese Croissant</td>
+                            <td>185</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Chicken Empanada</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Spaghetti Bolognese</td>
+                            <td>240</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Tuna Melt Sandwich</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>Four-Cheese Flatbread</td>
+                            <td>230</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Grilled Chicken Pesto Panini</td>
+                            <td>260</td>
+                        </tr>
+                        <tr>
+                            <td>Roast Beef Sandwich</td>
+                            <td>290</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Beef Lasagna</td>
+                            <td>270</td>
+                        </tr>
+                    </table>
+                    <table class="Desserts">
+                        <!-- Desserts -->
+                        <tr class="striped">
+                            <th>Desserts</th>
+                            <th>Price (PHP)</th>
+                        </tr>
+                        <tr>
+                            <td>Chocolate Chip Cookie</td>
+                            <td>65</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Blueberry Cheesecake</td>
+                            <td>190</td>
+                        </tr>
+                        <tr>
+                            <td>Classic Chocolate Cake</td>
+                            <td>170</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Strawberry Shortcake</td>
+                            <td>220</td>
+                        </tr>
+                        <tr>
+                            <td>Tiramisu</td>
+                            <td>210</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Choco Butternut Donut</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Salted Caramel Brownie</td>
+                            <td>120</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Chocolate Mousse</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Lemon Square</td>
+                            <td>130</td>
+                        </tr>
+                        <tr class="striped">
+                            <td>Banana Loaf Slice</td>
+                            <td>100</td>
+                        </tr>
+                    </table>
+
+                    <!-- Form to submit order -->
+                    <form id="form">
+                    <h2 class="menu-title">Enter your Order here</h2>
+
+                    <!-- Nickname Field -->
+                    <div class="prerequisite">
+                    <label for="nickname">Enter Your Nickname:</label>
+                    <input type="text" id="nickname" name="nickname" placeholder="Your nickname" required>
+
+                    <!-- Table Number -->
+                    <br>
+                    <label for="table-no">Enter Your Table Number:</label>
+                    <input type="number" id="table-no" name="table-no" min="1" max="50" placeholder="1-50" required>
+                    </div>
+                    
+                    <!-- Hot Drinks Section -->
+                    <div class="form-container">
+                    <fieldset>
+                        <legend>Hot Drinks</legend>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Café Americano">
+                            Café Americano
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Café Latte">
+                            Café Latte
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Cappuccino">
+                            Cappuccino
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Caramel Macchiato">
+                            Caramel Macchiato
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Flat White">
+                            Flat White
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Mocha">
+                            Mocha
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Hot Chocolate">
+                            Hot Chocolate
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Matcha Green Tea Latte">
+                            Matcha Green Tea Latte
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Chai Tea Latte">
+                            Chai Tea Latte
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="English Breakfast Tea">
+                            English Breakfast Tea
+                        </label>
+                    </fieldset>
+
+                    <!-- Cold Drinks Section -->
+                    <fieldset>
+                        <legend>Cold Drinks</legend>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Cold Brew Coffee">
+                            Cold Brew Coffee
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Iced Café Latte">
+                            Iced Café Latte
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Iced Caramel Macchiato">
+                            Iced Caramel Macchiato
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Iced Mocha">
+                            Iced Mocha
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Iced Matcha Green Tea Latte">
+                            Iced Matcha Green Tea Latte
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Iced White Chocolate Mocha">
+                            Iced White Chocolate Mocha
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Iced Shaken Hibiscus Tea">
+                            Iced Shaken Hibiscus Tea
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Frappuccino Java Chip">
+                            Frappuccino Java Chip
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Frappuccino Caramel">
+                            Frappuccino Caramel
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Frappuccino Creamcheese">
+                            Frappuccino Creamcheese
+                        </label>
+                    </fieldset>
+
+                    <!-- Hot Foods Section -->
+                    <fieldset>
+                        <legend>Hot Foods</legend>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Bacon, Egg & Cheese Sandwich">
+                            Bacon, Egg & Cheese Sandwich
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Sausage, Egg & Cheese Wrap">
+                            Sausage, Egg & Cheese Wrap
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Ham & Cheese Croissant">
+                            Ham & Cheese Croissant
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Chicken Empanada">
+                            Chicken Empanada
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Spaghetti Bolognese">
+                            Spaghetti Bolognese
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Tuna Melt Sandwich">
+                            Tuna Melt Sandwich
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Four-Cheese Flatbread">
+                            Four-Cheese Flatbread
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Grilled Chicken Pesto Panini">
+                            Grilled Chicken Pesto Panini
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Roast Beef Sandwich">
+                            Roast Beef Sandwich
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Beef Lasagna">
+                            Beef Lasagna
+                        </label>
+                    </fieldset>
+
+                    <!-- Desserts Section -->
+                    <fieldset>
+                        <legend>Desserts</legend>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Chocolate Chip Cookie">
+                            Chocolate Chip Cookie
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Blueberry Cheesecake">
+                            Blueberry Cheesecake
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Classic Chocolate Cake">
+                            Classic Chocolate Cake
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Strawberry Shortcake">
+                            Strawberry Shortcake
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Tiramisu">
+                            Tiramisu
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Choco Butternut Donut">
+                            Choco Butternut Donut
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Salted Caramel Brownie">
+                            Salted Caramel Brownie
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Chocolate Mousse">
+                            Chocolate Mousse
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Lemon Square">
+                            Lemon Square
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="order[]" value="Banana Loaf Slice">
+                            Banana Loaf Slice
+                        </label>
+                    </fieldset>
+
+                    <!-- Textarea for Extra Instructions -->
+                    <fieldset class="textarea">
+                        <legend>Extra Instructions</legend>
+                        <textarea name="extraInstructions" rows="4" cols="50" placeholder="Add any extra instructions here..."></textarea>
+                    </fieldset>
+                    </div>
+
+                    <!-- Submit and Reset Buttons -->
+                    <div class="form-buttons">
+                        <button type="submit">Submit Order</button>
+                        <button type="reset">Reset Form</button>
+                    </div>
+
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="copyright">
+                <p>&copy; Copyright 2024. All rights reserved. Created by Juan Carlo De Castro</p>
+                <p><a href="mailto:jcdecastro1@student.hau.edu.ph">jcdecastro1@student.hau.edu.ph</a></p>
+            </div>
+            <div id="socials">
+                <a href="https://www.facebook.com/jc.decastro.50/" target="_blank">
+                    <img src="images/facebook_logo.png" alt="Facebook logo">
+                </a>
+                <a href="https://github.com/JCDC0" target="_blank">
+                    <img src="images/github_logo.png" alt="Github logo">
+                </a>
+                <a href="mailto:1carlodcastro@gmail.com" target="_blank">
+                    <img src="images/email_logo.png" alt="Outlook Email logo">
+                </a>
+                <a href="tel:09234023668" target="_blank">
+                    <img src="images/call.png" alt="Telephone logo">
+                </a>
+            </div>
+            <audio controls autoplay id="bgAudio">
+                <source src="media/Coffee-Lofi.ogg" type="audio/ogg">
+                <source src="media/Coffee-Lofi.mp3" type="audio/mpeg">
+            Your browser unfortunately does not support chill audio
+            </audio>
+        </footer>
+    </div>
+</body>
+</html>
+    

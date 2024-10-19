@@ -1,0 +1,170 @@
+<!-- 
+De Castro, Juan Carlo C.
+CS - 202 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Base Format -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Webpage Description -->
+    <title>Catnip Cafe || Cat Gallery</title>
+    <meta name="description" content="Catnip Cafe provides entertainment for our dearest customers to have a sight of our cute and funny cats doing funny things or just chilling!.">
+    
+    <!-- External File Links -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+
+    <!-- Font "Afacad Flux", "Julius Sans One"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel = "shortcut icon" href = "images/Favicon.png">
+    <link rel = "icon" type = "image/png" sizes = "32x32" href = "images/Favicon.png">
+    <link rel = "apple-touch-icon" sizes = "180x180" href = "images/Favicon.png" >
+    <link rel = "icon" sizes = "192x192" href = "images/Favicon.png" >
+</head>
+<body>
+    <div id="container">
+        <header id="logo">
+                <!-- Desktop - Tablet Navbar -->
+                <nav class="desktop-nav">
+                    <ul>
+                        <li class="logo-item">
+                            <a href="index.html">
+                                <img src="images/Cafe_logo.png" alt="Catnip Cafe logo" class="logo">
+                            </a>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Cafe Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile Navbar -->
+                <nav class="mobile-nav">                    
+                        <a href="index.html">
+                        <img src="images/Cafe_logo.png" alt="Catnip Cafe logo" class="logo">
+                        </a>
+                    <a onclick = "hamburger()">
+                        <div class = "menu-icon">&#9776;</div>
+                    </a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Cafe Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <main>
+            <div class="bg-container">
+                <img src="images/Cafe.jpg" alt="Cafe Background" class="bg" id="mobile-bg">
+                <div class="main-content">
+                    <div class="gallery">
+                        <h1>Take a look at our feline friends!</h1>
+                        <div class="top-video-cat">
+                            <h2>Best Cat Video of the day</h2>
+                            <video width="270" height="480" controls>
+                                <source src="media/CatFunny_Social.mp4" type="video/mp4">
+                                <source src="media/CatFunny_Social.webm" type="video/webm">
+                                <source src="media/CatFunny_Social.ogg" type="video/ogg">
+                            Your browser does not support the Cattastic Video format
+                            </video>
+                        </div>
+                        <div class="top-pics-cat">
+                            <h2>Best Cat Pictures of the day</h2>
+                            <figure class="collections">
+                                <img src="cats/topcat1.jpg" alt="Floof Kittens">
+                                <img src="cats/topcat3.jpg" alt="Mewing Cat">
+                                <img src="cats/topcat2.jpg" alt="Cat with plushie">
+                            </figure>
+                        </div>
+                        <div class="sugar-coffee">
+                            <h2>Sugar & Coffee</h2>
+                            <figure class="collections">
+                                <img src="cats/sugar-coffee1.jpg" alt="kittens on a slipper">
+                                <img src="cats/sugar-coffee2.jpg" alt="kittens on small cups">
+                                <img src="cats/sugar-coffee3.jpg" alt="kittens next to each other">
+                                <img src="cats/sugar-coffee4.jpg" alt="kittens sleeping together">
+                            </figure>
+                        </div>
+                        <div class="nutmeg">
+                            <h2>Nutmeg</h2>
+                            <figure class="collections">
+                                <img src="cats/nutmeg-fam.jpg" alt="Cat sleeping with kittens">
+                                <img src="cats/nutmeg1.jpg" alt="Cat Selfie">
+                                <img src="cats/nutmeg2.jpg" alt="Cat in covers">
+                            </figure>
+                        </div>
+                        <div class="cinnamon">
+                            <h2>Cinnamon</h2>
+                            <figure class="collections">
+                                <img src="cats/cinnamon1.jpg" alt="Mother Cat with kittens">
+                                <img src="cats/cinnamon2.jpg" alt="Cat Stretching">
+                                <img src="cats/cinnamon3.jpg" alt="Mother Cat with kittens in a box">
+                                <img src="cats/cinnamon4.jpg" alt="Mother Cat laying in a table">
+                            </figure>
+                        </div>
+                        <div class="ginger">
+                            <h2>Ginger</h2>
+                            <figure class="collections">
+                                <img src="cats/ginger1.jpg" alt="Cat sitting next to a wall">
+                                <img src="cats/ginger2.jpg" alt="Cat chilling with the family">
+                                <img src="cats/ginger3.jpg" alt="Cat sleeping on a basket">
+                            </figure>
+                        </div>
+                        <div class="chia">
+                            <h2>Chia</h2>
+                            <figure class="collections">
+                                <img src="cats/chia1.jpg" alt="Cat chilling on the yard">
+                                <img src="cats/chia2.jpg" alt="Cat on top of a car at night">
+                            </figure>
+                        </div>
+                        <div class="pepper">
+                            <h2>Pepper</h2>
+                            <figure class="collections">
+                                <img src="cats/pepper1.jpg" alt="Cat selfie">
+                                <img src="cats/pepper2.jpg" alt="Cat chilling">
+                                <img src="cats/pepper3.jpg" alt="Cat chilling with another cat">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="copyright">
+                <p>&copy; Copyright 2024. All rights reserved. Created by Juan Carlo De Castro</p>
+                <p><a href="mailto:jcdecastro1@student.hau.edu.ph">jcdecastro1@student.hau.edu.ph</a></p>
+            </div>
+            <div id="socials">
+                <a href="https://www.facebook.com/jc.decastro.50/" target="_blank">
+                    <img src="images/facebook_logo.png" alt="Facebook logo">
+                </a>
+                <a href="https://github.com/JCDC0" target="_blank">
+                    <img src="images/github_logo.png" alt="Github logo">
+                </a>
+                <a href="mailto:1carlodcastro@gmail.com" target="_blank">
+                    <img src="images/email_logo.png" alt="Outlook Email logo">
+                </a>
+                <a href="tel:09234023668" target="_blank">
+                    <img src="images/call.png" alt="Telephone logo">
+                </a>
+            </div>
+            <audio controls autoplay id="bgAudio">
+                <source src="media/Coffee-Lofi.ogg" type="audio/ogg">
+                <source src="media/Coffee-Lofi.mp3" type="audio/mpeg">
+            Your browser unfortunately does not support chill audio
+            </audio>
+        </footer>
+    </div>
+</body>
+</html>
+    
